@@ -26,7 +26,7 @@
         $toutlestypes =dbRequestActif($db);
         $nombrechamp =0;
         try{
-          echo'pas caca';
+          
           $date = date("Y-m-d H:i:s");
           $libelle = $_POST['nom_fichier'].$date;
           $statement = $db->prepare("INSERT INTO modele (libelle,nom_fichier, nom_table, date_creation) VALUES (?,?,?,?)");
@@ -108,7 +108,11 @@
                                 
                                 </div>
                                 <?php
-                                break;
+                              break;
+
+                              default:
+                                echo "c'était pour vous faire plaisir";
+                            break; 
                             } //fin du switch ?> <br><br><br>
                           </div>
                         </td>  <?php

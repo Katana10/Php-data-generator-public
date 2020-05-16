@@ -123,7 +123,6 @@
                             <b> Format de fichier à fournir</b>
                             <input type="radio" name="format" value=".sql"/>.sql
                             <input type="radio" name="format" value=".csv"/>.csv
-                            
                           </div>
                         </td>
                       </tr>

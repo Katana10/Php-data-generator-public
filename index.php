@@ -46,6 +46,19 @@
 				<td class="nom_fichier"><?php echo $row['nom_fichier']; ?></td>
 				<td class="nom_table"><?php echo $row['nom_table']; ?></td>
 				<td class="date_creation"><?php echo $row['date_creation']; ?></td>
+				<td><FORM action="php/request3.php" method="post">
+	
+					<b>Nombre de données :</b> <input type="text" name="nombre" placeholder="saisir...">
+
+					<b> Format de fichier à fournir</b>
+					<input type="radio" name="format" value=".sql"/>.sql
+					<input type="radio" name="format" value=".csv"/>.csv
+	
+					<input type="hidden" name="libelle" value="<?php echo $row['libelle']?>"/>
+					<input type="submit" name="last" value="Dernière étapes"/>
+
+					</FORM>
+				</td>
 			</tr>
 			<?php endforeach; ?>
 		</TBODY>

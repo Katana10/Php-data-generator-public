@@ -54,8 +54,7 @@
                     }
                     
                 }
-                // var_dump($nom);
-                // var_dump($type);
+                
                 $donnee =array($nom);
                 
                 $nombre = $_POST['nombre']*$nb_champ + $nb_champ;
@@ -131,10 +130,10 @@
                         }
                     }  
                 }
-                //$f = str_replace(",\n", ";", $f[$_POST['nombre']-1]);
+                
                 
                 fclose($f);
-                //téléchargement($lefichier);
+                
  
             }
             ?>

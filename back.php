@@ -66,7 +66,28 @@
 			</div>
 		</div>
 	</FORM>
+	<FORM action="back.php" method="post">
+		<h4>Voulez vous inscrire un nouveau type de champ</h4>
+		<input type="text" name="type_champ" placeholder="saisir..."/>
+		<select class="custom-select" name="actif">
+			<option value='Actif' select>Actif</option>
+			<option value='Inactif'>Inactif</option>
+		<input type="submit" name="create" value="Création"/>
+	</FORM>
 	<?php
+	if (isset($_POST['create'])){
+		$db =dbConnect();
+        try{
+          
+          
+          $statement = $db->prepare("INSERT INTO type_champ (type_champ, actif) VALUES (?,?)");
+   
+          $statement->execute([$_POST['type_champ'], $_POST['actif']]);        
+        }catch (PDOException $exception){
+          error_log('Request error: '.$exception->getMessage());
+          return false;
+        }
+	}
 	#Obligé de mettre un radio pour éviter un ping pong entre les valeurs à cause du reload des valeurs
 	if (isset($_POST['check'])){
 		$i = 0;

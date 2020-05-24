@@ -1,9 +1,10 @@
-#Data-Generator
+# Data-Generator
 
 
 Application permettant de générer de la donnée dans un format SQL/CSV à partir de modèles créés par l'utilisateur.
 
-#Dépendances
+## Dépendances
+
 Vous devez posséder sur votre machine:
 
 * PHP version 7 ou supérieur
@@ -11,11 +12,11 @@ Vous devez posséder sur votre machine:
 * MySQL
 Le projet à été essayé sous XAMP et sous WINDOWS.
 
-#Installation
+## Installation
 
 Télécharger le fichier zip à partir de l'ENT, puis enregistrer le projet sous Xamp/htdocs.
 
-#Mise en place du site
+## Mise en place du site
 
 Le site possède sa propre base de donnée que vous devez charger afin de le rendre fonctionnel.
 Pour ce faire rendez-vous sur phpmyadmin et suivez les étapes suivantes:
@@ -30,7 +31,7 @@ Tout est inclus dans le fichier SQL_commande.sql, mais si vous voulez changer le
 A condition de ne pas oublier les changer dans phpmyadmin.
 
 
-#Utilisation
+## Utilisation
 
 Pour généré des données aléatoires aller sur générateur de donnée puis suiver les étapes en remplissant les champs qui vous conviennes.
 

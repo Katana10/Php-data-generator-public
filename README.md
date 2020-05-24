@@ -23,9 +23,9 @@ Pour ce faire rendez-vous sur phpmyadmin et suivez les étapes suivantes:
 
   1. Cliquer sur la rubrique import à la base de votre serveur.
   2. Télécharger le fichier SQL_commande.sql se trouvant là où vous avez enregister le projet dans Fichier_création_BDD.
-  3. N'oublier pas de sélectionner les options 
-  ..* Jeu de caractères du fichier : utf-8
-  ..* FORMAT SQL
+  3. N'oublier pas de sélectionner les options:
+  **_Jeu de caractères du fichier_ :** utf-8
+  **_FORMAT_** SQL
   4. Cliquer sur executer.
 
 

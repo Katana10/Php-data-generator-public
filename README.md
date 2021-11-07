@@ -1,30 +1,44 @@
-## Data-Generator
-Application permettant de générer de la donnée dans un format SQL/CSV à partir de modèles créés par l'utilisateur.
+### Data-Generator
 
-# Dépendances
-Vous devez posséder sur votre machine :
+This app let you generate data in .sql/.csv format from a model create by the user.
 
-PHP version 7 ou supérieur
-Un serveur Web (Apache)
-MySQL 
-Le projet à été essayé sous XAMP et sous WINDOWS.
 
-# Installation
-Télécharger le fichier zip à partir de l'ENT, puis enregistrer le projet sous Xamp/htdocs.
+## DEPENDENCIES
 
-# Mise en place du site
-Le site possède sa propre base de donnée que vous devez charger afin de le rendre fonctionnel. Pour ce faire, rendez-vous sur phpmyadmin et suivez les étapes suivantes :
+You must have on your machine :
 
-1. Cliquer sur la rubrique import à la base de votre serveur.
-2. Télécharger le fichier SQL_commande.sql se trouvant là où vous avez enregistré le projet dans Fichier_création_BDD.
-3. N'oubliez pas de sélectionner les options **_Jeu de caractères du fichier_ :** utf-8 et **_FORMAT_** SQL
-4. Cliquer sur exécuter.
+PHP version 7 or higher
+A Web server (Apache)
+MySql
 
-Tout est inclus dans le fichier SQL_commande.sql, mais si vous voulez changer les logins de connexion, vous pouvez changer les constantes dans le fichier php/constante.php. À condition de ne pas oublier les changer dans phpmyadmin.
+The project has been tested under XAMP and under WINDOWS.
 
-# Utilisation
-Pour générer des données aléatoires cliquer sur générateur de données puis suiver les étapes en remplissant les champs qui vous conviennes.
+## INSTALLATION
 
-Lorsqu'un modèle existe déjà, il est possible de le rejouer et d'en ressortir un fichier avec de nouvelles données aléatoires. Le format de fichier peut être changé, si vous aviez choisi un .sql la première fois vous pouvez choisir un .csv la seconde. ATTENTION!! Si vous ne téléchargez pas le fichier la première fois et que vous le rejouer les valeurs seront modifier.
+## Under Xamp/windows
 
-La page back est utilisé pour désactiver un type champ sur la page d'accueil. Par exemple, si je désactive un varchar, celui-ci ne sera plus proposé sur la page d'accueil, mais apparaîtra si vous rejouez un modèle. Vous pouvez rejouer un modèle existant dans la base de donnée depuis la page d'accueil.
+Download the zip file from my repository, then save the project under Xamp/htdocs.
+
+# Setting up of the site
+
+The website has its own database that you need to load in order to make it functional. 
+
+To do this, go to phpmyadmin and follow these steps:
+
+1. Click on the heading _import_ to your server's database.
+2. Download the #SQL_commande.sql# file located where you saved the project in the folder #Fichier_BDD_SQL#.
+3. Do not forget to select the options **_Character set of the file_:** utf-8 and **_FORMAT_** SQL
+4. Click on execute.
+
+
+Everything is included in the #SQL_commande.sql# file, but if you want to change the connection logins, you can change the constants in the #php/constant.php# file. As long as you don't forget to change them in phpmyadmin.
+
+## USE
+
+To generate randoms data, clic on **générateur de données** and follow the instructions by putting the informations of your table.
+
+When a model exist, you can replay it to create new randoms data. In this case you can just change the number of data and the file's format.
+**WARNING !!** If you don't download the file the first time and you replay it a second time the data will not be the same.
+
+The page **back** is used to disable a field type on the home page. 
+For example, if you disable a varchar, it will no longer be proposed on the home page, but will appear if you replay a template. You can replay an existing template in the database from the home page.

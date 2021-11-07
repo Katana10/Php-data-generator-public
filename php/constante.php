@@ -1,7 +1,7 @@
 <?php
 
     define('DB_USER', 'groot');
-    define('DB_PASSWORD', 'Avengers');
+    define('DB_PASSWORD', '$1Avengers');
     define('DB_NAME', 'mini_projet');
     define('DB_SERVER', 'localhost');
     $mysqlDsn = "mysql:host=".DB_SERVER.";dbname=".DB_NAME.';charset=utf8'.";";
